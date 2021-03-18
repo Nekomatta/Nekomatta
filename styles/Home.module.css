@@ -1,0 +1,67 @@
+@font-face {
+  font-family: Droid Sans Mono for Powerline;
+  src: url("/font.otf") format("opentype");
+}
+
+
+.main {
+  background-color: black;
+  height:100%;
+  overflow:hidden;
+  font-family: Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.center {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+  width: 100vw;
+}
+
+.background {
+  background-color: black;
+  height: 100vh;
+  width: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.image {
+  opacity: 15%;
+  width: auto;
+  height: 100vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.text {
+  color: #FC3E6B;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vh;
+  font-family: Droid Sans Mono for Powerline;
+  text-align: center;
+  z-index: 2;
+  margin: 0px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1080px) {
+  .image {
+    width: 100vw;
+    height: auto;
+  }
+  .text {
+    top: 55%;
+    font-size: 4vh;
+  }
+}
